@@ -4,8 +4,8 @@ RUN apt-get update
 
 RUN apt-get install -y apache2
 
-RUN sed -i 's/Listen 80/Listen 8080/g' /etc/apache2/ports.conf
+RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf
 
 EXPOSE 8080
 
-CMD ["/usr/bin/httpd -DFOREGROUND"]
+CMD ["/usr/sbin/apache2ctl -DFOREGROUND"]
