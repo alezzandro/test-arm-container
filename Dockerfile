@@ -8,4 +8,4 @@ RUN sed -i 's/80/8080/g' /etc/apache2/ports.conf
 
 EXPOSE 8080
 
-CMD ["/usr/sbin/apache2ctl -DFOREGROUND"]
+CMD ["/usr/sbin/apache2ctl", "-DFOREGROUND"]
