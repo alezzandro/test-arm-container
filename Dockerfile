@@ -1,4 +1,4 @@
-FROM multiarch/debian-debootstrap:armhf-wheezy
+FROM multiarch/debian-debootstrap:arm64-buster-slim
 
 RUN apt-get update
 
