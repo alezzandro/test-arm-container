@@ -1,4 +1,4 @@
-FROM multiarch/debian-debootstrap:arm64-buster-slim
+FROM multiarch/debian-debootstrap:arm64-stretch-slim
 
 RUN apt-get update
 
